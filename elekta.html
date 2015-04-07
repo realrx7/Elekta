@@ -13,10 +13,8 @@
 	<script src="./js/jquery-1.11.2.min.js"></script>
 	<script src="./js/main.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic' rel='stylesheet' type='text/css'>
-	<script src="//app-ab05.marketo.com/js/forms2/js/forms2.min.js"></script>
-<script src="http://munchkin.marketo.net/munchkin.js"type="text/javascript"></script>
-<script src="//app-sjp.marketo.com/js/forms2/js/forms2.js"></script>
-<form id="mktoForm_1119"></form> 
+    <script src="http://app-ab05.marketo.com/js/forms2/js/forms2.min.js"></script>
+	<script>MktoForms2.loadForm("http://app-ab05.marketo.com", "598-GVT-298", 1119);</script>
 </head>
 
 
@@ -217,20 +215,7 @@
 	<!-- CONTACT US -->
 	<div id="contact-us-container">
 		<p id="contact-us-text">Contact Us For More Information</p>
-		<script>
-    MktoForms2.loadForm("//app-sjp.marketo.com", "598-GVT-298", 1119, function(form) {
-    //Measures form 1 load event .
-    Munchkin.munchkinFunction("clickLink",{href:"/form1load"})
-    form.onSuccess(function(callback) {
-    //Measures form 2 load event. This should be equal to form 1 submission count.
-        Munchkin.munchkinFunction("clickLink",{href:"/form2load"})
-        form.getFormElem().hide();
-                return false;
-            });
-        });
-    });
-});
-</script>
+		<form id="mktoForm_1119"></form>
 	</div>
 
 
