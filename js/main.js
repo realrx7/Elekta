@@ -26,70 +26,14 @@ $(document).ready(function(){
 
 		});
 		$('body').css('overflow-x','hidden');
+		$('#wht-down-arrow').click(function(){
+			$('#contact-us-container').css('display','block');
 
-		function responsiveMinHeight(){
-		var height = $('#bioC').height();
-		$('#cameraMan').css('min-height', height); 
-		var height = $('#lensC').height();
-		$('#formImg').css('min-height', height); 
-}
+		});
+
 	$(window).load( function(){
 		responsiveMinHeight();
 });
 });
 
-// loads > menu shows
-// click the open menu > hamburger icon
-// menu hides
-// dropdown opens
 
-
-
-// $(document).ready(function(){
-// 	$('#navBar').click(function(){
-// 		$('nav').toggle(200);
-// 		$(this).toggleClass('active');
-// 		if ( $(window).innerWidth() < 533 ){
-// 			$('#pCont').toggle(200);
-// 		}
-// 	});
-// 	$('.navLink').click(function(event){
-// 		event.preventDefault();
-// 		$('#pCont').show(200);
-// 		$('nav a.active').removeClass('active');
-// 		$(this).addClass('active');
-// 		var hrf = $(this).attr('href');
-// 		hrf = $(hrf).offset();
-// 		var headerHeight = parseInt( $('#headerCont').css("line-height") );
-// 		$('html, body').animate( { scrollTop: hrf.top - headerHeight + 1} );
-// 		if($('#navBar').is(':visible') ){
-// 			$('nav').hide(200);
-// 			$('#navBar').removeClass('active');	
-// 		}
-// 	});
-// 	responsiveMinHeight();
-// });
-// $( window ).resize( function(){	
-// 	responsiveMinHeight();
-// });	
-function responsiveMinHeight(){
-	var height = $('#bioC').height();
-	$('#cameraMan').css('min-height', height); 
-	var height = $('#lensC').height();
-	$('#formImg').css('min-height', height); 
-}
-$(window).load( function(){
-	responsiveMinHeight();
-});
-
-
-// STEPS
-
-// click navigation icon
-// open navigation navigation-container
-// add class
-// navigation-button now has a class of open
-// if navigation-button has a class of open
-// show the close-button
-// close button is clicked
-// add class "closed"
